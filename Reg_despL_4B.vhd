@@ -13,9 +13,9 @@ use ieee.std_logic_1164.all;
 Entity Reg_despL_4B is
 	generic (k: integer:= 40); --<----k bits 
 	port (resetn, clock, En, Ld : in std_logic;
-			N    : in std_logic_vector(3 downto 0);
-		   Ent  : in std_logic_vector(k-1 downto 0);
-			Q	  : buffer std_logic_vector (k-1 downto 0));
+		N    : in std_logic_vector(3 downto 0);
+		Ent  : in std_logic_vector(k-1 downto 0);
+		Q    : buffer std_logic_vector (k-1 downto 0));
 end Reg_despL_4B;
 
 --Architecture
